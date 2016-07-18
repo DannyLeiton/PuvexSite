@@ -41,7 +41,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">This is Puvex <i class="fa fa-code"></i></a>
+                <a class="navbar-brand page-scroll" href="#page-top">{{'TITLE'|translate}} <i class="fa fa-code"></i></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,6 +56,12 @@
                     <li>
                         <a class="page-scroll" href="#services">{{'SERVICES'|translate}}</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="#tools">{{'TOOLS'|translate}}</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">{{'CONTACT'|translate}}</a>
+                    </li>
                     <!--<li>
                         <a class="page-scroll" href="#portfolio">{{'PORTFOLIO'|translate}}</a>
                     </li>-->
@@ -63,11 +69,8 @@
                     <li>
                         <a class="page-scroll" href="#team">{{'TEAM'|translate}}</a>
                     </li>-->
-                    <li>
-                        <a class="page-scroll" href="#contact">{{'CONTACT'|translate}}</a>
-                    </li>
                     <li title="{{'CHANGELANG'|translate}}">
-                        <a data-ng-click="changeLanguage(language=='en'? 'es':'en')">{{'BUTTON_LANG_EN'|translate}}</a>
+                        <a style="cursor: pointer" data-ng-click="changeLanguage(language=='en'? 'es':'en')">{{'BUTTON_LANG_EN'|translate}}</a>
                     </li>
                 </ul>
             </div>
@@ -85,77 +88,56 @@
             </div>
         </div>
     </header>
-        <!-- About Section -->
+    <!-- About Section -->
     <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">{{'ABOUT2'|translate}}</h2>
-                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row">
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            <img class="img-circle img-responsive" src="img/about/1.png" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>TEAM OF DEVELOPERS</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4>{{'ABOUT3'|translate}}</h4>
+                                <h4 class="subheading">{{'ABOUT4'|translate}}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">{{'ABOUT5'|translate}}</p>
                             </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            <img class="img-circle img-responsive" src="img/about/2.png" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4></h4>
-                                <h4 class="subheading">An Agency is Born</h4>
+                                <h4>{{'ABOUT6'|translate}}</h4>
+                                <h4 class="subheading">{{'ABOUT7'|translate}}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>AngularJS</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">{{'ABOUT8'|translate}}</p>
                             </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            <img class="img-circle img-responsive" src="img/about/3.png" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>NodeJS</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
+                                <h4>{{'ABOUT9'|translate}}</h4>
+                                <h4 class="subheading">{{'ABOUT10'|translate}}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">{{'ABOUT11'|translate}}</p>
                             </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>ASP.NET
-                                <br>ASPX</h4>
                         </div>
                     </li>
                 </ul>
@@ -169,7 +151,6 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">{{'SERVICES2'|translate}}</h2>
-                    <h3 class="subheading">{{'SERVICESDESC'|translate}}</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -194,12 +175,91 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">{{'GAMEDEV'|translate}}</h4>
-                    <p class="text-muted">{{'GAMEDEVDESC'|translate}}</p>
+                    <h4 class="service-heading">{{'GAMESDEV'|translate}}</h4>
+                    <p class="text-muted">{{'GAMESDEVDESC'|translate}}</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Tools Section -->
+    <section id="tools">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{'TOOLS2'|translate}}</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>MEAN Stack</h4>
+                                <h4 class="subheading">JavaScript Matters</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">MEAN stands for: MongoDB, ExpressJS, AngularJS & NodeJS</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>LAMP</h4>
+                                <h4 class="subheading">The Conventional Stack</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">We know about the Linux Apache MySQL PHP schema</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>ASP.NET</h4>
+                                <h4 class="subheading">For Microsoft Orgs</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">We can make Web APIs for the services</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Java</h4>
+                                <h4 class="subheading">Java</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Java</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Other
+                                <br>ones</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -259,9 +319,9 @@
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>-->
-                        <li><a href="#"><i class="fa fa-phone">(+506) 85193867</i></a>
+                        <li><a href="#" title="(+506) 85193867"><i class="fa fa-phone"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-envelope">info@puvex.io</i></a>
+                        <li><a href="#" title="info@puvex.io"><i class="fa fa-envelope"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-location"></i></a>
                         </li>
