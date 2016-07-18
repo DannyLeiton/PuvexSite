@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="puvex">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +31,7 @@
     <![endif]-->
 </head>
 
-<body ng-app="puvex" id="page-top" class="index">
+<body ng-controller="MainCtrl" id="page-top" class="index">
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -66,7 +66,7 @@
                         <a class="page-scroll" href="#contact">{{'CONTACT'|translate}}</a>
                     </li>
                     <li>
-                        <a ng-controller="MainCtrl" data-ng-click="">{{'BUTTON_LANG_EN'|translate}}</a>
+                        <a data-ng-click="changeLanguage(language=='en'? 'es':'en')">{{'BUTTON_LANG_EN'|translate}}</a>
                     </li>
                 </ul>
             </div>

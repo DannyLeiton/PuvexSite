@@ -29,7 +29,7 @@ app.config(function ($translateProvider) {
     TEAM: 'Equipo',
     CONTACT: 'Contacto',
     WELCOME2: 'Hagamos Software',
-    TELLMEMORE: 'Con&oacute;zcanos',
+    TELLMEMORE: 'Conózcanos',
     BUTTON_LANG_EN: 'English',
     SERVICESDESC: 'Somos un pequeño equipo de ingenieros de software establecido en San José, Costa Rica.Tenemos la misión de aportar nuestro talento a proyectos por implementar en cualquier parte del Mundo. Entregamos los productos de manera incremental.',
     WEBDEV: 'Desarrollo Web',    
@@ -39,7 +39,9 @@ app.config(function ($translateProvider) {
 });
 
 app.controller('MainCtrl', function ($scope, $translate) {
+  $scope.language = 'en';
   $scope.changeLanguage = function (key) {
+    $scope.language = key;
     $translate.use(key);
   };
 });
