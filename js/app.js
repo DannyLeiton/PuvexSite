@@ -7,14 +7,17 @@ app.config(function ($translateProvider) {
     SERVICES: 'Services',
     PORTFOLIO: 'Portfolio',
     SKILLS: 'Our Skills',
+    ABOUT: 'Acerca de',
     TEAM: 'Team',
     CONTACT: 'Contact',
     WELCOME2: "Let's Make Software",
     TELLMEMORE: 'Know us',
-    WEBDEV: 'Web Development',
-    INTROTEXT: 'Contact',
-    BUTTON_LANG_EN: 'english',
-    BUTTON_LANG_DE: 'spanish'
+    BUTTON_LANG_EN: 'Español',
+    SERVICESDESC: 'We are a small team of software engineers based in San José, Costa Rica. We have the mission to collaborate with our talent to projects anywhere in the world. We use an incremental development approach based on functional deliverables.',
+    WEBDEV: 'Web Development',    
+    WEBDEVDESC: 'We make awesome complete websites and web applications with the latest technologies',
+    MOBILEDEV:'',
+
   });
   $translateProvider.translations('es', {
     TITLE: 'Puvex',
@@ -25,11 +28,12 @@ app.config(function ($translateProvider) {
     ABOUT: 'Acerca de',
     TEAM: 'Equipo',
     CONTACT: 'Contacto',
-    WELCOME2: 'Es Un Placer Conocerle',
+    WELCOME2: 'Hagamos Software',
     TELLMEMORE: 'Con&oacute;zcanos',
-    INTROTEXT: 'Contacto',
-    BUTTON_LANG_EN: 'ingl&eacute;s',
-    BUTTON_LANG_DE: 'espa&ntilde;ol'
+    BUTTON_LANG_EN: 'English',
+    SERVICESDESC: 'Somos un pequeño equipo de ingenieros de software establecido en San José, Costa Rica.Tenemos la misión de aportar nuestro talento a proyectos por implementar en cualquier parte del Mundo. Entregamos los productos de manera incremental.',
+    WEBDEV: 'Desarrollo Web',    
+    WEBDEVDESC: 'Hacemos portales Web Completos y Aplicaciones a la medida con tecnologías actuales',
   });
   $translateProvider.preferredLanguage('en');
 });
@@ -38,6 +42,5 @@ app.controller('MainCtrl', function ($scope, $translate) {
   $scope.changeLanguage = function (key) {
     $translate.use(key);
   };
-  $scope.Language = "Español";
 });
 

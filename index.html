@@ -58,15 +58,15 @@
                     </li>-->
                     <li>
                         <a class="page-scroll" href="#about">{{'SKILLS'|translate}}</a>
-                    </li>
+                    </li><!--
                     <li>
                         <a class="page-scroll" href="#team">{{'TEAM'|translate}}</a>
-                    </li>
+                    </li>-->
                     <li>
                         <a class="page-scroll" href="#contact">{{'CONTACT'|translate}}</a>
                     </li>
                     <li>
-                        <a>{{Language}}</a>
+                        <a ng-controller="MainCtrl" data-ng-click="">{{'BUTTON_LANG_EN'|translate}}</a>
                     </li>
                 </ul>
             </div>
@@ -90,7 +90,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">{{'SERVICES'|translate}}</h2>
-                    <h3 class="section-subheading text-muted">{{'SERVICESDESC'|translate}}</h3>
+                    <h3 class="subheading">{{'SERVICESDESC'|translate}}</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -108,7 +108,7 @@
                         <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">{{'MOBILEDEV'|translate}}</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">{{'MOBILEDEVDESC'|translate}}</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -116,7 +116,7 @@
                         <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">{{'GAMEDEV'|translate}}</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">{{'GAMEDEVDESC'|translate}}</p>
                 </div>
             </div>
         </div>
@@ -224,7 +224,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">{{'SKILLS'|translate}}</h2>
-                    <h3 class="section-subheading text-muted">Have you heard about MEAN Stack?</h3>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row">
@@ -249,7 +249,7 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
+                                <h4>ExpressJS</h4>
                                 <h4 class="subheading">An Agency is Born</h4>
                             </div>
                             <div class="timeline-body">
@@ -263,7 +263,7 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2012</h4>
+                                <h4>AngularJS</h4>
                                 <h4 class="subheading">Transition to Full Service</h4>
                             </div>
                             <div class="timeline-body">
@@ -277,7 +277,7 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>July 2016</h4>
+                                <h4>NodeJS</h4>
                                 <h4 class="subheading">Phase Two Expansion</h4>
                             </div>
                             <div class="timeline-body">
@@ -287,9 +287,8 @@
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <h4>Be Part
-                                <br>Of Our
-                                <br>Story!</h4>
+                            <h4>ASP.NET
+                                <br>ASPX</h4>
                         </div>
                     </li>
                 </ul>
@@ -297,7 +296,7 @@
         </div>
     </section>
 
-    <!-- Team Section -->
+    <!-- Team Section 
     <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -310,8 +309,8 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
+                        <h4>Daniel Leitón</h4>
+                        <p class="text-muted">FullStack Developer</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -325,8 +324,8 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
+                        <h4>Edax Uclés</h4>
+                        <p class="text-muted">FullStack Developer</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -359,7 +358,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Clients Aside 
     <aside class="clients">
@@ -442,11 +441,17 @@
                 </div>
                 <div class="col-md-4">
                 <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        <!--<li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>-->
+                        <li><a href="#"><i class="fa fa-phone"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-envelope"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-location"></i></a>
                         </li>
                 </ul>
                 </div>
