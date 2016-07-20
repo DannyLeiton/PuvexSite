@@ -32,7 +32,6 @@
 </head>
 
 <body ng-controller="MainCtrl" id="page-top" class="index">
-
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
@@ -43,7 +42,6 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">{{'TITLE'|translate}} <i class="fa fa-code"></i></a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -55,9 +53,6 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">{{'SERVICES'|translate}}</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#tools">{{'TOOLS'|translate}}</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">{{'CONTACT'|translate}}</a>
@@ -94,13 +89,14 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">{{'ABOUT2'|translate}}</h2>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row">
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.png" alt="">
+                            <img class="img-circle img-responsive" src="img/about/crMap2.png" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -144,13 +140,13 @@
             </div>
         </div>
     </section>
-
     <!-- Services Section -->
     <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">{{'SERVICES2'|translate}}</h2>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -181,72 +177,13 @@
             </div>
         </div>
     </section>
-
-    <!-- Tools Section -->
-    <section id="tools">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">{{'TOOLS2'|translate}}</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row">
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>{{'TOOLS3'|translate}}MEAN Stack</h4>
-                                <h4 class="subheading">{{'TOOLS4'|translate}}JavaScript Matters</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">{{'TOOLS5'|translate}}MEAN stands for: MongoDB, ExpressJS, AngularJS & NodeJS</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline">
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>LAMP</h4>
-                                <h4 class="subheading">{{'TOOLS6'|translate}}The Conventional Stack</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">{{'TOOLS7'|translate}}We know about the Linux Apache MySQL PHP schema</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>.NET</h4>
-                                <h4 class="subheading">{{'TOOLS8'|translate}}For Microsoft Orgs</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">{{'TOOLS9'|translate}}We can make Web APIs for SOA</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">{{'CONTACT2'|translate}}</h2>
+                    <h3 class="section-subheading text-muted">{{'CONTACT3'|translate}}</h3>
                 </div>
             </div>
             <div class="row">
@@ -255,28 +192,31 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="{{'CONTACT4'|translate}}" id="name" required>
+                                    <p class="help-block text-danger"></p>
+                                    <div ng-messages="sentMessage.name.$error">
+                                        <p ng-message="required">Your name is required.</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="{{'CONTACT6'|translate}}" id="email" required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" placeholder="{{'CONTACT8'|translate}}" id="phone" required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="{{'CONTACT10'|translate}}" id="message" required data-validation-required-message="{{'CONTACT11'|translate}}"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-xl">{{'CONTACT12'|translate}}</button>
                             </div>
                         </div>
                     </form>
@@ -284,7 +224,6 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <div class="row">
@@ -303,7 +242,7 @@
                         </li>
                         <li><a href="#" title="info@puvex.io"><i class="fa fa-envelope"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-location"></i></a>
+                        <li><a href="#" title="San José, Costa Rica"><i class="fa fa-map-marker"></i></a>
                         </li>
                 </ul>
                 </div>
@@ -318,7 +257,6 @@
             </div>
         </div>
     </footer>
-
     <!-- Portfolio Grid Section
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
@@ -692,6 +630,7 @@
     <script src="js/agency.min.js"></script>
      <!-- AngularJS -->
     <script src="js/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
     <script src="bower_components/angular-translate/angular-translate.min.js"></script>
     <script src="js/app.js"></script>
 </body>

@@ -1,4 +1,4 @@
-var app = angular.module('puvex',['pascalprecht.translate']);
+var app = angular.module('puvex',['pascalprecht.translate', 'ngMessages']);
 
 app.config(function ($translateProvider) {
   $translateProvider.translations('en', {    
@@ -22,17 +22,6 @@ app.config(function ($translateProvider) {
     ABOUT11: 'Using an incremental development approach based on functional deliverables',
     SERVICES: 'Services',
     SERVICES2: 'What do we do?',
-    TOOLS: 'Tools',
-    TOOLS2: 'How do we do it?',
-    TOOLS3: 'MEAN Stack',
-    TOOLS4: 'JavaScript Matters',
-    TOOLS5: 'MEAN stands for: MongoDB, ExpressJS, AngularJS & NodeJS',
-    TOOLS6: 'LAMP',
-    TOOLS7: 'The Conventional Stack',
-    TOOLS8: 'We know about the Linux Apache MySQL PHP schema',
-    TOOLS9: '.NET',
-    TOOLS10: 'For Microsoft users',
-    TOOLS11: 'We can make Web APIs for SOA',
     PORTFOLIO: 'Portfolio',
     TEAM: 'THE Team',
     SERVICESDESC: 'Some of our services are:',
@@ -41,10 +30,19 @@ app.config(function ($translateProvider) {
     MOBILEDEV:'Mobile Development',
     MOBILEDEVDESC:"Imagine an App... We'll make it possible for Android and iOS",
     GAMESDEV:'Video Games',
-    GAMESDEVDESC:"Who doesn't like videogames? It's time to have fun coding creative software",  
+    GAMESDEVDESC:"Who doesn't like videogames? It's time to have fun coding entertaining software",  
     CONTACT: 'Contact',
-    CONTACT2: 'Contact us'
-
+    CONTACT2: 'Contact us',
+    CONTACT3: 'Tell us how we can help you',
+    CONTACT4: 'Your Name *',
+    CONTACT5: 'Please enter your name',
+    CONTACT6: 'Your Email *',
+    CONTACT7: 'Please enter your email address',
+    CONTACT8: 'Your Phone *',
+    CONTACT9: 'Please enter your phone number',
+    CONTACT10: 'Your Message *',
+    CONTACT11: 'Please enter a message',
+    CONTACT12: 'Send Message'
 });
 
   /*
@@ -59,8 +57,8 @@ app.config(function ($translateProvider) {
     BUTTON_LANG_EN: 'English',
     HOME: 'Inicio',
     TITLE: 'Somos Puvex',
-    GREETINGS: '¡Codificamos sus ideas!',
-    WELCOME2: 'Hagamos Software',
+    GREETINGS: 'Convertimos en software sus ideas',
+    WELCOME2: '¡Manos a la obra!',
     TELLMEMORE: 'Conózcanos',
     ABOUT: '¿Quiénes somos?', 
     ABOUT2: '¿Quiénes somos?',
@@ -75,30 +73,27 @@ app.config(function ($translateProvider) {
     ABOUT11: 'Entregamos los productos funcionales de manera incremental', 
     SERVICES: 'Servicios',
     SERVICES2: '¿Qué hacemos?',
-    TOOLS: 'Herramientas',
-    TOOLS2: '¿Cómo lo hacemos?',
-    TOOLS3: 'MEAN Stack',
-    TOOLS4: 'JavaScript Matters',
-    TOOLS5: 'MEAN stands for: MongoDB, ExpressJS, AngularJS & NodeJS',
-    TOOLS6: 'LAMP',
-    TOOLS7: 'The Conventional Stack',
-    TOOLS8: 'We know about the Linux Apache MySQL PHP schema',
-    TOOLS9: '.NET',
-    TOOLS10: 'For Microsoft users',
-    TOOLS11: 'We can make Web APIs for SOA',
     PORTFOLIO: 'Portafolio',
     TEAM: 'EL Equipo',
     SERVICESDESC: 'Algunos de nuestros servicios son:',
     WEBDEV: 'Desarrollo Web',    
     WEBDEVDESC: 'Hacemos portales Web Completos y Aplicaciones a la medida con tecnologías actuales',
     MOBILEDEV:'Desarrollo para Móviles',
-    MOBILEDEVDESC:'El app que a usted se le ocurra, la hacemos posible para Android y iOS',
+    MOBILEDEVDESC:'La app que a usted se le ocurra, la hacemos posible para Android y iOS',
     GAMESDEV:'Video Juegos',
-    GAMESDEVDESC:'¿A quién no le gustan los video juegos? Es tiempo de divertirse haciendo software creativo',
-  
-
+    GAMESDEVDESC:'¿A quién no le gustan los video juegos? Es tiempo de divertirse haciendo software para entretenimiento',
     CONTACT: 'Contacto',
-    CONTACT2: 'Contáctenos'
+    CONTACT2: 'Contáctenos',
+    CONTACT3: 'Díganos cómo le podemos ayudar',
+    CONTACT4: 'Su nombre *',
+    CONTACT5: 'Por favor, ingrese su nombre',
+    CONTACT6: 'Su correo electrónico *',
+    CONTACT7: 'Por favor, ingrese su correo electrónico',
+    CONTACT8: 'Su número de teléfono *',
+    CONTACT9: 'Por favor, ingrese su número de teléfono',
+    CONTACT10: 'Su mensaje *',
+    CONTACT11: 'Por favor, ingrese su mensaje',
+    CONTACT12: 'Enviar Mensaje'
 });
   $translateProvider.preferredLanguage('en');
 });
