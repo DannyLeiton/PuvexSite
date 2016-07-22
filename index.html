@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="puvex">
+<html lang="en" ng-app="coderoasters">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Puvex</title>
+    <title>CodeRoasters</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,9 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{'TITLE'|translate}} <i class="fa fa-code"></i></a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img class="img-responsive" style="max-height: 100px;" src="img/coder.png" alt="">
+                </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -194,9 +196,6 @@
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="{{'CONTACT4'|translate}}" id="name" required>
                                     <p class="help-block text-danger"></p>
-                                    <div ng-messages="sentMessage.name.$error">
-                                        <p ng-message="required">Your name is required.</p>
-                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control" placeholder="{{'CONTACT6'|translate}}" id="email" required>
@@ -228,7 +227,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">&#60;Puvex&#62; Copyright &copy; 2016 &#60;&#47;Puvex&#62;</span>
+                    <span class="copyright">&#60;CodeRoasters&#62; Copyright &copy; 2016 &#60;&#47;CodeRoasters&#62;</span>
                 </div>
                 <div class="col-md-4">
                 <ul class="list-inline social-buttons">
@@ -240,7 +239,7 @@
                         </li>-->
                         <li><a href="#" title="(+506) 85193867"><i class="fa fa-phone"></i></a>
                         </li>
-                        <li><a href="#" title="info@puvex.io"><i class="fa fa-envelope"></i></a>
+                        <li><a href="#" title="info@coderoasters.com"><i class="fa fa-envelope"></i></a>
                         </li>
                         <li><a href="#" title="San José, Costa Rica"><i class="fa fa-map-marker"></i></a>
                         </li>

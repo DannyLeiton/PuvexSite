@@ -1,11 +1,11 @@
-var app = angular.module('puvex',['pascalprecht.translate', 'ngMessages']);
+var app = angular.module('coderoasters',['pascalprecht.translate', 'ngMessages']);
 
 app.config(function ($translateProvider) {
   $translateProvider.translations('en', {    
     CHANGELANG: 'Cambiar a idioma Español',
     BUTTON_LANG_EN: 'Español',
     HOME: 'Home',
-    TITLE: 'This is Puvex',
+    TITLE: 'CodeRoasters',
     GREETINGS: 'We code your ideas!',
     WELCOME2: "Let's Make Software",
     TELLMEMORE: 'Know us',    
@@ -56,7 +56,7 @@ app.config(function ($translateProvider) {
     CHANGELANG: 'Switch to English Language',
     BUTTON_LANG_EN: 'English',
     HOME: 'Inicio',
-    TITLE: 'Somos Puvex',
+    TITLE: 'CodeRoasters',
     GREETINGS: 'Convertimos en software sus ideas',
     WELCOME2: '¡Manos a la obra!',
     TELLMEMORE: 'Conózcanos',

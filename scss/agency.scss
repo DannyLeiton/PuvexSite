@@ -188,7 +188,8 @@ header {
   @include background-cover;
   text-align: center;
   color: white;
-
+  -webkit-filter: contrast(200%); /* Chrome, Safari, Opera */
+  filter: contrast(200%);
   .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
