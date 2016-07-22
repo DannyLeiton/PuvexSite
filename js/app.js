@@ -100,12 +100,6 @@ app.config(function ($translateProvider) {
   $translateProvider.preferredLanguage('en');
 });
 
-/*
-  'Somos un pequeño equipo de ingenieros de software 
-   establecido en San José, Costa Rica.
-   Tenemos la misión de aportar nuestro talento a proyectos por implementar en cualquier parte del Mundo. 
-   Entregamos los productos funcionales de manera incremental.',
-*/
 
 app.controller('MainCtrl', function ($scope, $translate) {
   $scope.language = 'en';
